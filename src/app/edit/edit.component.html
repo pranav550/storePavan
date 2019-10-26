@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-header">
+        <h5 style="text-align: center">EDit Item</h5>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="form">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" readonly class="form-control" formControlName="id">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="form-group">
+                <label for="forks">Forks</label>
+                <input type="text" class="form-control" formControlName="forks">
+            </div>
+            <div class="form-group">
+                <label for="watchers">Watchers</label>
+                <input type="text" class="form-control" formControlName="watchers">
+            </div>
+            <div class="form-group">
+                <label for="issues">Open Issues</label>
+                <input type="text" class="form-control" formControlName="openIssues">
+            </div>
+            <div class="form-group">
+                <label for="language">Language</label>
+                <select class="form-control" formControlName="language">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>TypeScript</option>
+                    <option>Bootstrap</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="owner">Owner</label>
+                <input type="text" class="form-control" formControlName="owner">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" (click)="updateItem()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
